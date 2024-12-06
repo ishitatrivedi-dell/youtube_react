@@ -1,0 +1,130 @@
+.sidebar {
+    background-color:#212121 ;
+    width: 15em;
+    height: 100vh;
+}
+
+.logo {
+    display: flex;
+    width: 2em;
+    height:1.5em ;
+    gap: 2px;
+}
+.logo img {
+    margin-left: 1.5em;
+}
+hr {
+    margin-top: 10px;
+    width: 10em;
+
+}
+.Shorts{
+    color: antiquewhite;
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 0.9em;
+    margin-left: 1.4em;
+}
+
+.mainpage {
+    background-color: black;
+    display: flex;
+    flex-direction: row; /* Change to row to align sidebar and search bar horizontally */
+    width: 100vw;
+}
+
+.sidebar {
+    width: 15%; /* Assign a fixed width for the sidebar */
+    background-color: black; /* Ensure the sidebar has a distinct background */
+    color: white;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50em; 
+    margin: 1vh;
+    padding: 0 2vh;
+}
+
+.search {
+    background-color:black ;
+    gap: 3em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid rgba(48, 48, 48, 0.556);
+    background-color: rgba(36, 36, 36, 0.556);
+    border-radius: 4px;
+    padding: 0.5vh;
+    width: 50%; /* Adjust width of the search box */
+}
+
+.search>input {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: white; 
+    padding: 0.5vh;
+}
+
+.search>img {
+    background: rgba(48, 48, 48, 0.556);
+    padding: 0.5vh;
+    border-radius: 50%;
+}
+
+.mic {
+    margin-right: 10em;
+    padding: 0.5vh;
+}
+
+.acc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1vh;
+   
+}
+
+.acc>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 2vh 0;
+}
+
+.option>div {
+    background-color: rgba(48, 48, 48, 0.556);
+    padding: 11px;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.suggest{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 5vh;
+}
+
+
+
