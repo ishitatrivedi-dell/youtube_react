@@ -1,74 +1,106 @@
 import './css/app.css';
 
-function Navbar() {
+const Navbar = () => {
   return (
     <>
-    <div className="mainpage">
-
-
-    <div className="searchbar">
-          <div className="search">
-               <input type="text" name="search" placeholder="Search" />
-              <img
-              src="https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/search.png"
-              alt="Search Icon"
-              />
-          </div>
-          <div className="mic">
+    <div>
+      <div className="navbar">
+        {/* Search bar */}
+        <div className="navbar-search">
+          <input type="text" placeholder="Search" className="search-input" />
+          <button
+            className="search-btn"
+            style={{
+              height: "60px",
+              width: "70px",
+              marginRight: "10px",
+            }}
+          >
             <img
-              src="https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/mic.png"
-              alt="Mic Icon"
+              src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/search.png?raw=true"
+              alt="Search"
             />
-          </div>
-          <div className="acc">
-            <div>
-              <img
-                src="https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/create.png"
-                alt="Create Icon"
-              />
-            </div>
-            <div>
-              <img
-                src="https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/more.png"
-                alt="More Icon"
-              />
-            </div>
-            <div>
-              <img
-                src="https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/bell.png"
-                alt="Notification Bell"
-              />
-            </div>
-            <div>
-              <img
-                src="https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Ellipse%204-1.png"
-                alt="User Avatar"
-              />
-            </div>
-          </div>
+          </button>
+          <button
+            className="mic-btn"
+            style={{
+              height: "60px",
+              width: "50px",
+              marginLeft: "10px",
+              marginRight: "350px",
+            }}
+          >
+            <img
+              src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/mic.png?raw=true"
+              alt="Mic"
+            />
+          </button>
+        </div>
+
+        {/* Right-side icons */}
+        <div className="navbar-icons">
+          <img
+            src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/create.png?raw=true"
+            alt="Upload"
+            className="navbar-icon"
+          />
+          <img
+            src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/more.png?raw=true"
+            alt="Menu"
+            className="navbar-icon"
+          />
+          <img
+            src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/bell.png?raw=true"
+            alt="Notifications"
+            className="navbar-icon"
+          />
+          <img
+            src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%201%20(2).png?raw=true"
+            alt="Profile"
+            className="navbar-icon profile"
+          />
         </div>
       </div>
 
-      <hr className="line" />
+    <hr style={{
+        marginTop:'-90vh'
+    }}/>
+    <div className="trending">
+                    <div className="comp">All</div>
+                    <div className="comp">Cook Studio</div>
+                    <div className="comp">UX</div>
+                    <div className="comp">Case Study</div>
+                    <div className="comp">Music</div>
+                    <div className="comp">Bangla Lofi</div>
+                    <div className="comp">Tour</div>
+                    <div className="comp">Saintmartian</div>
+                    <div className="comp">Tech</div>
+                    <div className="comp">iphone 13</div>
+                    <div className="comp">User Interface Design</div>
+                    <div className="comp">Computer</div>
+                    <div>
+                        <img style={
+                            {
+                                height: '40px',
+                                width: '40px',
+                                borderRadius: '40%',
+                                marginLeft: '10px',
+                                marginTop: '10px',
+                            }
+                        } src="https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/leftBottom.png?raw=true" alt="" />
+                    </div>
+                </div>
+                <hr style={
+                    {
+                        marginTop: '10px',
+                    }
+                }/>
 
-      {/* Option Buttons */}
-      <div className="option">
-        <div>All</div>
-        <div>Cook Studio</div>
-        <div>UX</div>
-        <div>Case Study</div>
-        <div>Music</div>
-        <div>Bangla Life</div>
-        <div>Tour</div>
-        <div>Saint Martin</div>
-        <div>Tech</div>
-        <div>iPhone 13</div>
-        <div>User Interface Design</div>
-        <div>Computer</div>
+
+               
       </div>
-     
     </>
   );
-}
+};
 
 export default Navbar;
