@@ -1,234 +1,58 @@
 import './css/app.css'
 
-const videos = [
-    {
-        thumbnail: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-8.png?raw=true",
-        playButton: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%201%20(1).png?raw=true",
-        title: "Title of the Video",
-        views: "12,000,000 views",
-        channel: "Channel Name",
-        date: "Date",
-    },
-    {
-        thumbnail: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-9.png?raw=true",
-        playButton: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%201%20(4).png?raw=true",
-        title: "Title of the Video",
-        views: "12,000,000 views",
-        channel: "Channel Name",
-        date: "Date",
-    },
-    {
-        thumbnail: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-10.png?raw=true",
-        playButton: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%204%20(3).png?raw=true",
-        title: "Title of the Video",
-        views: "12,000,000 views",
-        channel: "Channel Name",
-        date: "Date",
-    },
-    {   
-        thumbnail: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-11.png?raw=true" ,
-        playButton: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%204%20(3).png?raw=true",
-        title: "Title of the Video",
-        views: "12,000,000 views",
-        channel: "Channel Name",
-        cover: "https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/live.png",
-        date: "Date",
-    },
-];
-
-
-const videos1 = [
-    {
-        thumbnail: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-4.png?raw=true" ,
-        playButton: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%201%20(1).png?raw=true",
-        title: "Title of the Video",
-        views: "12,000,000 views",
-        channel: "Channel Name",
-        date: "Date",
-    },
-    {
-        thumbnail: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-5.png?raw=true",
-        playButton: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%201%20(4).png?raw=true",
-        title: "Title of the Video",
-        views: "12,000,000 views",
-        channel: "Channel Name",
-        date: "Date",
-    },
-    {
-        thumbnail: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-6.png?raw=true",
-        playButton: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%204%20(3).png?raw=true",
-        title: "Title of the Video",
-        views: "12,000,000 views",
-        channel: "Channel Name",
-        date: "Date",
-    },
-    {
-        thumbnail: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-7.png?raw=true",
-        playButton: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%204%20(3).png?raw=true",
-        title: "Title of the Video",
-        views: "12,000,000 views",
-        channel: "Channel Name",
-        date: "Date",
-    },
-
-];
-
-
-const videos2 = [
-    {
-        thumbnail: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail.png?raw=true",
-        playButton: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%201%20(1).png?raw=true",
-        title: "Title of the Video",
-        views: "12,000,000 views",
-        channel: "Channel Name",
-        date: "Date",
-    },
-    {
-        thumbnail: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-1.png?raw=true",
-        playButton: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%201%20(4).png?raw=true",
-        title: "Title of the Video",
-        views: "12,000,000 views",
-        channel: "Channel Name",
-        date: "Date",
-    },
-    {
-        thumbnail: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-2.png?raw=true",
-        playButton: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%204%20(3).png?raw=true",
-        title: "Title of the Video",
-        views: "12,000,000 views",
-        channel: "Channel Name",
-        date: "Date",
-    },
-    {
-        thumbnail: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Thumbnail-3.png?raw=true",
-        playButton: "https://github.com/PatelNeelMahesh/frontend_tasks/blob/main/02.youtube-clone/assets/Ellipse%204%20(3).png?raw=true",
-        title: "Title of the Video",
-        views: "12,000,000 views",
-        channel: "Channel Name",
-        date: "Date",
-    },
-
-];
-
-
-function Videosection() {
-
-
+function Cards(){
+    
+    
+            const box = [
+            {id:1, tbh:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Thumbnail-8.png", elii:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Ellipse%201%20(1).png", para:'Bulbuli | Coke Studio Bangla | Season One | RituRaj X Nandita'},
+            {id:2, tbh:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Thumbnail-9.png", elii:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Ellipse%204%20(2).png", para:'Infinix Note 12                AMOLED Helio G88 SoC!   '},
+            {id:3, tbh:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Thumbnail-10.png", elii:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Ellipse%204%20(3).png", para:'Bulbuli | Coke Studio Bangla | Season One | RituRaj X Nandita'},
+            {id:4, tbh:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Thumbnail-11.png", elii:"", para:'Bulbuli | Coke Studio Bangla | Season One | RituRaj X Nandita'},
+            {id:5, tbh:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Thumbnail-4.png", elii:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Ellipse%204%20(4).png", para:'Bulbuli | Coke Studio Bangla | Season One | RituRaj X Nandita'},
+            {id:6, tbh:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Thumbnail-5.png", elii:"", para:'Bulbuli | Coke Studio Bangla | Season One | RituRaj X Nandita'},
+            {id:7, tbh:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Thumbnail-6.png", elii:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Ellipse%204%20(5).png", para:'Bulbuli | Coke Studio Bangla | Season One | RituRaj X Nandita'},
+            {id:8, tbh:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Thumbnail-7.png", elii:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Ellipse%204%20(6).png", para:'Bulbuli | Coke Studio Bangla | Season One | RituRaj X Nandita'},
+            {id:9, tbh:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Thumbnail.png",   elii:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Ellipse%204-1.png", para:'Bulbuli | Coke Studio Bangla | Season One | RituRaj X Nandita'},
+            {id:10, tbh:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Thumbnail-1.png", elii:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Ellipse%204-1.png", para:'Bulbuli | Coke Studio Bangla | Season One | RituRaj X Nandita'},
+            {id:11, tbh:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Thumbnail-2.png", elii:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Ellipse%204-1.png", para:'Bulbuli | Coke Studio Bangla | Season One | RituRaj X Nandita'},
+            {id:12, tbh:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Thumbnail-3.png", elii:"https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Ellipse%204-1.png", para:'Bulbuli | Coke Studio Bangla | Season One | RituRaj X Nandita'},
+        ]
     return (
         <>
-            <div className="all">
+        
 
-
-
-
-                <div className="main-content">
-
-                    <div className="row">
-                        {videos.map((video, index) => (
-                            <div className="video" key={index}>
-                                <img style={{
-                                    width:'370px',
-
-                                }} src={video.thumbnail } alt="Video Thumbnail" className='photo-layer'/>
-                                {index === 3 && <img src={video.cover} alt="Video Cover" className='photo-layer inner-photo'/>}
-                                
-                                <div className="cpy">
-                                    <div className="play-btn">
-                                        <img style={
-                                            {
-                                                width:'45px',
-                                                height:'45px',
-                                                marginTop:'.5vh'
-                                            }
-                                        } src={video.playButton} alt="Play Button" />
-                                    </div>
-                                    <div className="cpy2">
-                                        <div className="title">{video.title}</div>
-                                        <div className="channel">{video.channel}</div>
-                                        {/* <div className="cpy1"> */}
-                                            <div className="views">{video.views}</div>
-                                            <div className="date">{video.date}</div>
-                                        {/* </div> */}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-
-                    <hr />
-
-                    <div className="row">
-                        {videos1.map((video, index) => (
-                            <div className="video" key={index}>
-                                <img  style={{
-                                    width:'370px',
-                                    
-                                }} src={video.thumbnail} alt="Video Thumbnail" />
-                                <div className="play-btn">
-                                    <img style={
-                                            {
-                                                width:'45px',
-                                                height:'45px',
-                                                marginTop:'.5vh'
-                                            }
-                                        } src={video.playButton} alt="Play Button" />
-                                </div>
-                                <div className="title1">{video.title}</div>
-                                <div className="channel">{video.channel}</div>
-                                {/* <div className='cpy2'> */}
-                                <div className="views">{video.views}</div>
-                            
-                                <div className="date">{video.date}</div>
-                                {/* </div> */}
-                            </div>
-                        ))}
-                    </div>
-
-                    <hr />
-
-                    <div className="row">
-                        {videos2.map((video, index) => (
-                            <div className="video" key={index}>
-                                <img  style={{
-                                    width:'370px',
-                                    
-                                }} src={video.thumbnail} alt="Video Thumbnail" />
-                                
-                                <div className="play-btn">
-                                    <img style={
-                                            {
-                                                width:'45px',
-                                                height:'45px',
-                                                marginTop:'.5vh'
-                                            }
-                                        } src={video.playButton} alt="Play Button" />
-                                </div>
-                                <div className="title2">{video.title}</div>
-                                <div className="channel">{video.channel}</div>
-                                {/* <div className='cpy3'> */}
-                                <div className="views">{video.views}</div>
-                              
-                                <div className="date">{video.date}</div>
-                                {/* </div> */}
-                            </div>
-                        ))}
-                    </div>
+        <div className="section4">
+            {/* <div className="icons">
+                <img src="https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Thumbnail-8.png" alt="" />
+                <div className="ellipse">
+                    <img src="https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Ellipse%201%20(1).png" alt="" />
+                    <p>Bulbuli | Coke Studio Bangla | Season One | RituRaj X Nandita</p>
 
                 </div>
+            </div>
+            <div className="icons">
+                <img src="https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Thumbnail-8.png" alt="" />
+                <div className="ellipse">
+                    <img src="https://raw.githubusercontent.com/PatelNeelMahesh/frontend_tasks/refs/heads/main/02.youtube-clone/assets/Ellipse%201%20(1).png" alt="" />
+                    <p>Bulbuli | Coke Studio Bangla | Season One | RituRaj X Nandita</p>
 
+                </div>
+            </div> */}
+            {box.map((res)=>
+               ( <div key={res.id} className="icons">
+                <img src={res.tbh} />
+                <div className="ellipse">
+                    <img src={res.elii} alt=""/>
+                    <p>{res.para}</p>
 
+                </div>
+            </div>)
+        
 
-
-
-
-
-
-
-            </div >
+            )}
+        </div>
         </>
-
     )
-
 }
 
-export default Videosection;
+export default Cards;

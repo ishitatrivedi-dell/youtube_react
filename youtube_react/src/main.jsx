@@ -2,7 +2,9 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App2 from './components/Sidebar.jsx'
 import Navbar from './components/Navbar.jsx'
-import Videosection from './components/Cards.jsx'
+
+import Cards from './components/Cards.jsx'
+import Sidebar from './components/Sidebar.jsx'
 
 
 
@@ -13,11 +15,11 @@ createRoot(document.getElementById('root')).render(
    
   
     <div className='main'>
-    <App2 />
+    <Sidebar/>
 <div className='foralingment'>
 <div>
 <Navbar/>
-<Videosection />
+<Cards/>
 </div>
 
 
